@@ -3,5 +3,6 @@
 :root{
     --bg-color:#1b1b1b;
     --text-color:#f2f2f2;
+    --text-color-2:orangered;
     --border: 2px solid orangered;
 }
