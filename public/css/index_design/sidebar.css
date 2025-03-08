@@ -5,6 +5,7 @@ section.side-bar{
     margin-left: 10px;
     padding: 14px;
     border-radius: 4px;
+    height: 100vh;
 }
 section.side-bar div.menu-top{
     color: var(--text-color-2);

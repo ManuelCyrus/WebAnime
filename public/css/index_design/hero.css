@@ -1,22 +1,116 @@
-section.hero{
-    color: white;
+main {
     position: absolute;
     top: 90px;
-    left: 300px;
-    background-image: url(../../img/img-2.png);
+    left: 310px;
+    width: 72%;
+    overflow: hidden;
+}
+section.hero {
+    position: relative;
+    color: white;
+    width: 100%;
+    
     height: 300px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin: 10px 20px;
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
-    border: 1px solid;
+    margin: 10px auto;
+    padding: 20px;
+    display: flex;
+    align-items: flex-end;
+    overflow: hidden; 
+    background-blend-mode: multiply;
+   
+   
+    
 }
 
-section.hero::before{
-content: '';
-width: 100%;
-height: 100%;
-display: inline-block;
-    background-color: rgba(0, 0, 0, 0.729);
+
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.822); 
+    z-index: 0;
+}
+
+.hero .hero-content {
+    position: relative;
+    z-index: 1; 
+    
+    
+}
+
+
+.anime-history h1 {
+    font-size: 39px;
+    margin-bottom: 15px;
+}
+
+.anime-history p {
+    max-width: 520px;
+    word-spacing: 4px;
+    line-height: 1.5;
+}
+
+.hero-content button {
+    width: 180px;
+    height: 50px;
+    margin-top: 20px;
+    border: none;
+    background-color: orangered;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.hero-content button:hover {
+    background-color: #b20710;
+}
+
+/* LIST anime card container */
+
+h1{
+    color: #fff;
+    font-size: 40px;
+    margin-top: 12px;
+}
+
+.anime-card-container{
+    display: flex;
+    gap: 15px;
+    padding: 5px;
+    color: #fff;
+}
+
+.anime-card{
+    width: 200px ;
+    margin-bottom: 20px;
+}
+.anime-card img{
+    width: 100%;
+    height: 200px;
+}
+.anime-card h1{
+   font-size: 20px;
+   margin-top: 6px;
+   margin-bottom: 5px;
+}
+.anime-card p{
+   color: #d1d1d1;
+   margin-top: 6px;
+   margin-left: 6px;
+
+   
+}
+.anime-card-container{
+    display: flex;
+    gap: 15px;
+    padding: 5px;
+    color: #fff;
 }
